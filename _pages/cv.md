@@ -13,7 +13,9 @@ author_profile: true
   This project deals with scraping posts from reddit, preprocessing and modelling on the data and then deploying the classifier on heroku.
   
 ## [Facial Recognition](HTTPS://GITHUB.COM/ADITYAK2920/FACIALRECOGNITION)
-  <img src="https://raw.githubusercontent.com/adityak2920/FacialRecognition/master/imgs/demo.png" width="310" height="310"> I have used OpenCV, Haar Cascades, KNN a ML algorithm and ipwebcam app for recognising faces using laptop webcam and android’s phone camera.
+  <img src="https://raw.githubusercontent.com/adityak2920/FacialRecognition/master/imgs/demo.png" width="310" height="310"> It's a python project to recognise faces
+  in the wild. It uses primarily OpenCV to do tasks related to image preprocessing. I have used Harrcascades to detect faces from each frame. 
+  <img align="right" src="https://raw.githubusercontent.com/adityak2920/FacialRecognition/master/imgs/demo.png">
   
 ## [Neural Art(Style Transfer)](HTTPS://GITHUB.COM/ADITYAK2920/NEURALART-IN-PYTORCH)
 <p float="left">
