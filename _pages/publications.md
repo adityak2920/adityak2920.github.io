@@ -5,4 +5,7 @@ permalink: /experience/
 author_profile: true
 ---
 
+## Sparrosense
+  ### Deep Learning Intern ( June 2020 - August 2020 )
+    Worked on Unsupervised Representation Learning for classification and improved accuracies of image classifiers.
 
