@@ -21,6 +21,6 @@ Projects
 <p float="left">
   <img src="https://user-images.githubusercontent.com/35501699/54220463-7c17a700-4517-11e9-8256-6c0c2f396ff9.jpg" width="310" height="310" />
   <img src="https://user-images.githubusercontent.com/35501699/54220469-7de16a80-4517-11e9-9912-3e5384929ec8.jpg" width="310" height="310" /> 
-  <img src="https://user-images.githubusercontent.com/35501699/54220476-80dc5b00-4517-11e9-8443-f6ba00eb947e.jpg" width="290" height="290" />
+  <img src="https://user-images.githubusercontent.com/35501699/54220476-80dc5b00-4517-11e9-8443-f6ba00eb947e.jpg" width="280" height="280" />
 </p>
   Implementation of Neural Art(Style Transfer) in PyTorch in C++ and PyTorch.
