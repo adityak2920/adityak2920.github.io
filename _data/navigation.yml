@@ -16,7 +16,7 @@ main:
     url: /blog/
     
   - title: "CV"
-    url: /cv/
+    url: "https://drive.google.com/file/d/1GI1bHIDxItnEeOhZf4QpAKK_QLa7d-4Z/view?usp=sharing"
     
   - title: "Others"
     url: /others/
