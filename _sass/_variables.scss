@@ -44,17 +44,17 @@ $type-size-8                : 0.625em;  // ~10px
 
 
 /*
-   Colors
+   Colors 054f56
    ========================================================================== */
 
-$gray                       : #054f56;
+$gray                       : #004c4c;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
-$body-color                 : #054f56;
-$background-color           : #054f56;
+$body-color                 : #004c4c;
+$background-color           : #004c4c;
 $code-background-color      : mix(#000, $background-color, 15%);
 $code-background-color-dark : mix(#000, $background-color, 20%);
 $text-color                 : #eaeaea;
