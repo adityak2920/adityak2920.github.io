@@ -9,4 +9,4 @@ redirect_from:
 ---
 
 
-![](adityak2920.github.io/images/BingWallpaper-2020-04-22.jpeg)
+![](adityak2920.github.io/images/BingWallpaper-2019-10-03.jpg)
