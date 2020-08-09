@@ -13,29 +13,29 @@ permalink: /others/
 
 ## Skills
 ### Languages
-  Python                                                                                                                                                            
-  C++/C
+   * Python                                                                                                                                                            
+   * C++/C
  
 ### Frameworks
-  PyTorch                                                                                                                                                           
-  scikit-learn                                                                                                                                                      
-  OpenCV                                                                                                                                                            
-  FastAPI                                                                                                                                                           
-  Flask                                                                                                                                                               
-  Detectron2                                                                                                                                                        
+   * PyTorch                                                                                                                                                           
+   * scikit-learn                                                                                                                                                      
+   * OpenCV                                                                                                                                                            
+   * FastAPI                                                                                                                                                           
+   * Flask                                                                                                                                                               
+   * Detectron2                                                                                                                                                        
   
 ### Operating System
-  MacOS                                                                                                                                                             
-  ubuntu
+   * MacOS                                                                                                                                                             
+   * ubuntu
   
 ### Other Skills
-  Git                                                                                                                                                               
-  jupyter-notebook                                                                                                                                                  
-  MySQL                                                                                                                                                             
-  bash/ssh                                                                                                                                                          
-  Docker                                                                                                                                                            
+   * Git                                                                                                                                                               
+   * jupyter-notebook                                                                                                                                                  
+   * MySQL                                                                                                                                                             
+   * bash/ssh                                                                                                                                                          
+   * Docker                                                                                                                                                            
   
   
 ## Achievements/Contributions
-  Secure and Private AI Scholarship from Udacity and Facebook                                                                                                         
-  OpenCV Contributor
+   * Secure and Private AI Scholarship from Udacity and Facebook                                                                                                         
+   * OpenCV Contributor
