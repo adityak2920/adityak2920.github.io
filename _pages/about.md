@@ -19,10 +19,10 @@ I have worked with [Humonics Global](http://humonics.ai/) on project from resear
 segmentation and classfication. 
 
 Right now, I am focusing on training computer vision models with less amount of data. Basically, I am focusing on unsupervised representation learning for computer
-vision. I like to read papers, find takeways from the paper and then implementing that paper that in my own way. I also sometimes participate in Kaggle
-competitions. I am always looking to learn new things. So, these days I am learning about maths and theory behind differnt NLP concepts. I like to read blogs about 
-different innovative applications of deep learning to solve real world problems. I also like to solve data structures and algorithms problems and sometimes
-participate in cometitions because ranks in these competitions really motivate me.
+vision. I like to read papers, find takeways from the paper and then implement the paper in my own way. I also sometimes participate in Kaggle competitions. I am 
+always looking to learn new things. So, these days I am learning about maths and theory behind different NLP concepts. I like to read blogs about different 
+innovative applications of deep learning to solve real world problems. I also like to solve data structures and algorithms problems and sometimes participate in 
+competitions because ranks in these competitions really motivates me.
 
 In my free time, I like to watch crime thrillers. I also contribute and answers to questions of others on reddit or different forums because these forums or 
 communities have solved my problems also. I am firm beleiver that with hardwork anyone can achieve anything. I beleive in code first approach but at the same time I 
