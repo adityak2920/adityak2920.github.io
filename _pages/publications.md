@@ -7,11 +7,12 @@ author_profile: true
 
 ## Research Intern, [Retail Pulse](https://www.retailpulse.ai/)
  *August 2020 - Present, Bangalore*
-   * Solving challenging problems faced by FMCG, CPG companies and reatilers using deep learning and computer vision.
+   * Solving challenging problems faced by FMCG, CPG companies and retailers using deep learning and computer vision.
  
 ## Deep Learning Intern, [Sparrosense](https://www.sparrosense.com/)
  *June 2020 - August 2020, Gurugram*
-   * Worked on Unsupervised Representation Learning for classification and improved accuracies of image classifiers.
+   * Worked on Unsupervised Representation Learning for steel pouring classification in steel manufacturing process.
+   * Improved accuracy of classifiers from 85-93% and also improved robustness of model to different scenarios in an industry.
     
 ## Data Science Intern, [Humonics Global](http://humonics.ai/)
  *June 2019 - January 2020, Gurugram*
