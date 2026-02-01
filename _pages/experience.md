@@ -1,35 +1,9 @@
 ---
-permalink: /
-excerpt: "About me"
-author_profile: false
-redirect_from: 
-  - /about/
-  - /about.html
+layout: archive
+title: "Experience"
+permalink: /my-experience/
+author_profile: true
 ---
-
-<img src="/images/3.png" alt="Aditya Kumar" class="profile-pic">
-
-# Aditya Kumar
-
-<p class="subtitle">Software Engineer · Bangalore, India</p>
-
-<div class="section">
-    <div class="links">
-        <a href="mailto:adityak2920@gmail.com">Email</a>
-        <a href="https://linkedin.com/in/adityak2920">LinkedIn</a>
-        <a href="https://github.com/adityak2920">GitHub</a>
-        <a href="https://adityak2920.github.io/files/Aditya_CV.pdf">CV</a>
-    </div>
-</div>
-
-<div class="section">
-    <p>
-    Software Engineer with <strong>5 years of experience</strong> building large-scale systems serving 3M+ users. <strong>High-agency engineer</strong> with end-to-end ownership, from identifying opportunities and navigating stakeholder requirements to driving technical execution and deployment. Deep expertise in backend systems and Machine Learning infrastructure at scale.
-    </p>
-</div>
-
-## Experience
-
 **Kirana Club** | Software Development Engineer | *Jan 2023 -- Present*
 - Architected and led the development of a **unified e-commerce platform** (Go, Next.js) that orchestrates the complete order lifecycle for thousands of daily transactions, integrating a custom Order Management System (OMS) with automated logistics allocation and warehouse management for hundreds of sellers.
 - Developed a centralized suite for SKU cataloging, automated pricing, and coupon management alongside a real-time analytics platform to track sales trends and supply chain bottlenecks, reducing order processing time from **hours to near-instantaneous** while significantly improving delivery success rates.
@@ -48,25 +22,7 @@ redirect_from:
 **Humonics Global** | Data Science Intern | *Jun 2019 -- Jan 2020*
 - Built instance segmentation models for automated car insurance claims achieving 0.8 mAP and optimized the inference pipeline using TorchScript and C++ to achieve a **1.5x speedup** in production.
 
-## Technical Skills
-- **Languages:** Golang, Python, JavaScript/TypeScript, SQL, C++
-- **Backend & Systems:** FastAPI, Node.js, Next.js, gRPC, Docker, RabbitMQ, System Design
-- **Databases & Storage:** PostgreSQL, Redis, Firebase, ClickHouse, Elasticsearch, Uber H3
-- **Machine Learning:** PyTorch, Computer Vision (YOLO, OpenCV), Deep Metric Learning, Model Serving
-
 ## Education
+
 **Guru Gobind Singh Indraprastha University** | New Delhi, India
 *B.Tech in Electronics and Communication Engineering* | 2017 -- 2021
-
-## Achievements
-- **Open Source Contributor:** Contributed to OpenCV library with merged PRs.
-- **Scholarship:** Recipient of Secure and Private AI Scholarship from Facebook and Udacity.
-
-## Recent Blog Posts
-<ul>
-  {% for post in site.posts limit:5 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>

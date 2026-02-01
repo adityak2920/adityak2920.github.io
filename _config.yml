@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Aditya Kumar"
 title_separator          : "-"
 name                     : &name "Aditya Kumar"
-description              : &description "personal description"
+description              : &description "Software Engineer | Backend Systems | Machine Learning"
 url                      : https://adityak2920.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "adityak2920/adityak2920.github.io"
@@ -81,9 +81,9 @@ analytics:
 # Site Author
 author:
   name             : "Aditya Kumar"
-  avatar           : "aditya.png"
-  bio              : "Computer Vision and Deep Learning Researcher"
-  location         : "New Delhi, India"
+  avatar           : "3.png"
+  bio              : "Software Engineer with 5 years of experience building large-scale systems."
+  location         : "Bangalore, India"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
@@ -102,14 +102,14 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "adityak2920/"
+  linkedin         : "adityak2920"
   orcid            : # "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "adityak2920"
+  twitter          : ""
   vine             :
   weibo            :
   xing             :

@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "Experience"
-    url: /experience/
+    url: /my-experience/
 
   - title: "Projects"
     url: /projects/    
@@ -18,5 +18,5 @@ main:
   - title: "CV"
     url: "https://adityak2920.github.io/files/Aditya_CV.pdf"
     
-  - title: "Courses and Skills"
-    url: /others/
+  - title: "Skills"
+    url: /skills/

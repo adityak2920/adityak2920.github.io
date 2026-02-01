@@ -24,6 +24,13 @@
   }
 
   .page__inner-wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 24px;
+    float: none;
+  }
+
+  .page__inner-wrap {
     @include full();
 
     .page__content,
@@ -37,8 +44,14 @@
 .page__title {
   margin-top: 0;
   line-height: 1;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+  color: #000;
 
-  & + .page__meta {
+  &+.page__meta {
     margin-top: -0.5em;
   }
 }
@@ -52,11 +65,23 @@
 
   h2 {
     padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    border-bottom: none;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #999;
+    margin-bottom: 16px;
+    margin-top: 48px;
   }
 
-  p, li, dl {
-    font-size: 1em;
+  p,
+  li,
+  dl {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 16px;
   }
 
   /* paragraph indents */
@@ -64,8 +89,8 @@
     margin: 0 0 $indent-var;
 
     /* sibling indentation*/
-    @if $paragraph-indent == true {
-      & + p {
+    @if $paragraph-indent ==true {
+      &+p {
         text-indent: $indent-var;
         margin-top: -($indent-var);
       }
@@ -73,13 +98,17 @@
   }
 
   a {
-    text-decoration: underline;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    transition: opacity 0.2s;
 
     &:hover {
-      text-decoration: underline;
+      opacity: 0.5;
+      text-decoration: none;
 
       img {
-        box-shadow: 0 0 10px rgba(#000, 0.25);
+        box-shadow: none;
       }
     }
   }
@@ -101,7 +130,7 @@
   }
 
   /* blockquote citations */
-  blockquote + .small {
+  blockquote+.small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
@@ -300,6 +329,7 @@
   transition: $global-transition;
 
   &.disabled {
+
     input,
     button,
     textarea,
@@ -398,4 +428,34 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+/* Custom Profile Styles */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 32px;
+  border: 1px solid #e5e5e5;
+  padding: 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 48px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
 }
