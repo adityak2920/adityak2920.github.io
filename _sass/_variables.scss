@@ -64,7 +64,7 @@ $type-size-8 : 0.625em; // ~10px
 
 
 /*
-   Colors 054f56 004c4c 
+   Colors
    ========================================================================== */
 
 $gray : #7a8288;
@@ -73,14 +73,14 @@ $darker-gray : mix(#000, $gray, 60%);
 $light-gray : mix(#fff, $gray, 50%);
 $lighter-gray : mix(#fff, $gray, 90%);
 
-$body-color : #1e1b4b;
-$background-color : #f7f7fb;
-$code-background-color : #ededf5;
+$body-color : #111;
+$background-color : #fff;
+$code-background-color : #f6f6f6;
 $code-background-color-dark : $light-gray;
-$text-color : #1e1b4b;
-$border-color : #dddde8;
+$text-color : #111;
+$border-color : #eaeaea;
 
-$primary-color : #1e1b4b;
+$primary-color : #111;
 $success-color : #62c462;
 $warning-color : #f89406;
 $danger-color : #ee5f5b;
@@ -110,9 +110,9 @@ $xing-color : #006567;
 
 
 /* links */
-$link-color : #3730a3 !default;
-$link-color-hover : #1e1b4b !default;
-$link-color-visited : #4338ca !default;
+$link-color : #111 !default;
+$link-color-hover : #555 !default;
+$link-color-visited : #333 !default;
 $masthead-link-color : $primary-color !default;
 $masthead-link-color-hover : mix(#000, $primary-color, 25%) !default;
 $navicon-link-color-hover : mix(#fff, $primary-color, 75%) !default;
