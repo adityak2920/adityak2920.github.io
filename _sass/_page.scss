@@ -43,13 +43,13 @@
 
 .page__title {
   margin-top: 0;
-  line-height: 1;
+  line-height: 1.1;
   font-family: 'Inter', sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 8px;
-  letter-spacing: -0.02em;
-  color: #000;
+  letter-spacing: -0.03em;
+  color: #111;
 
   &+.page__meta {
     margin-top: -0.5em;
@@ -64,24 +64,24 @@
 .page__content {
 
   h2 {
-    padding-bottom: 0.5em;
+    padding-bottom: 0;
     border-bottom: none;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     color: #999;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     margin-top: 48px;
   }
 
   p,
   li,
   dl {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.7;
     color: #333;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   /* paragraph indents */
@@ -98,13 +98,13 @@
   }
 
   a {
-    color: #000;
+    color: #111;
     text-decoration: none;
-    border-bottom: 1px solid #000;
-    transition: opacity 0.2s;
+    border-bottom: 1px solid #ddd;
+    transition: border-color 0.2s;
 
     &:hover {
-      opacity: 0.5;
+      border-bottom-color: #111;
       text-decoration: none;
 
       img {
@@ -432,30 +432,71 @@
 
 /* Custom Profile Styles */
 .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 32px;
-  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  border: none;
   padding: 0;
 }
 
 .subtitle {
-  font-size: 16px;
+  font-size: 15px;
   color: #666;
-  margin-bottom: 48px;
+  margin-bottom: 0;
   font-weight: 400;
   margin-top: 0;
+  letter-spacing: 0.01em;
 }
 
 .section {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .links {
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+
+  a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111 !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid #ccc !important;
+    padding-bottom: 1px;
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-bottom-color: #111 !important;
+      opacity: 1 !important;
+    }
+  }
+}
+
+/* Inline page navigation */
+.page-nav {
+  display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  margin-bottom: 32px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 40px;
+
+  a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666 !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #111 !important;
+      opacity: 1 !important;
+    }
+  }
 }
