@@ -18,7 +18,6 @@ redirect_from:
         <a href="mailto:adityak2920@gmail.com">Email</a>
         <a href="https://linkedin.com/in/adityak2920">LinkedIn</a>
         <a href="https://github.com/adityak2920">GitHub</a>
-        <a href="https://adityak2920.github.io/files/Aditya_CV.pdf">CV</a>
     </div>
 </div>
 
