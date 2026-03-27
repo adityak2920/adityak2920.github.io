@@ -2,18 +2,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  html {
-    background-color: #eeeef5;
+  html, body {
+    background-color: #f7f7fb;
+    margin: 0;
+    padding: 0;
   }
 
   body {
-    background-color: #f7f7fb;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");
-    box-shadow: 0 2px 24px rgba(30, 27, 75, 0.10), 0 1px 4px rgba(30, 27, 75, 0.06);
     min-height: 100vh;
   }
 
   .masthead {
-    display: none;
+    display: none !important;
   }
 </style>
