@@ -7,14 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-<nav class="page-nav">
-    <a href="/">About</a>
-    <a href="/my-experience/">Experience</a>
-    <a href="/projects/">Projects</a>
-    <a href="/blogs/">Blog</a>
-    <a href="/skills/">Skills</a>
-</nav>
-
 <img src="/images/3.png" alt="Aditya Kumar" class="profile-pic">
 
 # Aditya Kumar
