@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-<img src="/images/3.png" alt="Aditya Kumar" class="profile-pic">
+<img src="/images/4.png" alt="Aditya Kumar" class="profile-pic">
 
 # Aditya Kumar
 
