@@ -49,7 +49,7 @@
   font-weight: 600;
   margin-bottom: 8px;
   letter-spacing: -0.03em;
-  color: #111;
+  color: #ededf0;
 
   &+.page__meta {
     margin-top: -0.5em;
@@ -70,7 +70,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: #999;
+    color: #8a8a94;
     margin-bottom: 20px;
     margin-top: 48px;
   }
@@ -80,7 +80,7 @@
   dl {
     font-size: 15px;
     line-height: 1.7;
-    color: #333;
+    color: #c3c3cb;
     margin-bottom: 12px;
   }
 
@@ -98,13 +98,14 @@
   }
 
   a {
-    color: #111;
+    color: #ededf0;
     text-decoration: none;
-    border-bottom: 1px solid #ddd;
-    transition: border-color 0.2s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    transition: border-color 0.2s, color 0.2s;
 
     &:hover {
-      border-bottom-color: #111;
+      border-bottom-color: $accent-color;
+      color: #fff;
       text-decoration: none;
 
       img {
@@ -435,15 +436,18 @@
   width: 80px;
   height: 80px;
   border-radius: 8px;
-  object-fit: cover;
+  background-image: url("/images/profile.jpg");
+  background-size: 150%;
+  background-position: 50% 18%;
+  background-repeat: no-repeat;
   margin-bottom: 20px;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0;
 }
 
 .subtitle {
   font-size: 15px;
-  color: #666;
+  color: #9a9aa2;
   margin-bottom: 0;
   font-weight: 400;
   margin-top: 0;
@@ -463,14 +467,14 @@
   a {
     font-size: 14px;
     font-weight: 500;
-    color: #111 !important;
+    color: #e8e8ea !important;
     text-decoration: none !important;
-    border-bottom: 1px solid #ccc !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
     padding-bottom: 1px;
     transition: border-color 0.2s;
 
     &:hover {
-      border-bottom-color: #111 !important;
+      border-bottom-color: $accent-color !important;
       opacity: 1 !important;
     }
   }
@@ -482,21 +486,353 @@
   gap: 24px;
   flex-wrap: wrap;
   padding: 20px 0;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   margin-bottom: 40px;
 
   a {
     font-size: 14px;
     font-weight: 500;
-    color: #666 !important;
+    color: #9a9aa2 !important;
     text-decoration: none !important;
     border-bottom: none !important;
     letter-spacing: 0.02em;
     transition: color 0.2s;
 
     &:hover {
-      color: #111 !important;
+      color: #ededf0 !important;
       opacity: 1 !important;
     }
+  }
+}
+
+/* ==========================================================================
+   Creative-minimal additions
+   ========================================================================== */
+
+/* Status pill — small live indicator near the top */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #c8c8d0;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  padding: 4px 12px 4px 10px;
+  letter-spacing: 0.01em;
+  margin-bottom: 24px;
+  transition: background 0.2s, border-color 0.2s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.18);
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #2ea043;
+    box-shadow: 0 0 0 0 rgba(46, 160, 67, 0.6);
+    animation: status-pulse 2.2s infinite;
+  }
+}
+
+@keyframes status-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(46, 160, 67, 0.55); }
+  70%  { box-shadow: 0 0 0 8px rgba(46, 160, 67, 0);   }
+  100% { box-shadow: 0 0 0 0 rgba(46, 160, 67, 0);     }
+}
+
+/* Inline anchor nav — sits under the intro for quick jumps */
+.section-nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 14px 0;
+  margin: 28px 0 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: "JetBrains Mono", Monaco, monospace;
+
+  a {
+    font-size: 12px;
+    color: #8a8a94 !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    letter-spacing: 0.04em;
+    transition: color 0.2s;
+    position: relative;
+
+    &::before {
+      content: "→ ";
+      color: #4a4a54;
+      transition: color 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+
+    &:hover {
+      color: #ededf0 !important;
+      opacity: 1 !important;
+
+      &::before {
+        color: $accent-color;
+        transform: translateX(2px);
+      }
+    }
+  }
+}
+
+/* "Currently" callout — small framed block, personal/dynamic */
+.now-card {
+  margin: 8px 0 32px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #c3c3cb;
+  transition: border-color 0.2s, background 0.2s;
+
+  &:hover { border-color: rgba(255, 255, 255, 0.16); background: rgba(255, 255, 255, 0.05); }
+
+  .now-label {
+    font-family: "JetBrains Mono", Monaco, monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #8a8a94;
+    flex-shrink: 0;
+    padding-top: 2px;
+  }
+}
+
+/* Marker-pen highlight on key numbers/metrics */
+.metric {
+  background: linear-gradient(180deg, transparent 62%, rgba(122, 162, 255, 0.28) 62%);
+  padding: 0 2px;
+  font-weight: 600;
+  color: #f2f2f5;
+}
+
+/* Experience entries — left accent slides in on hover */
+.page__content .exp {
+  position: relative;
+  padding-left: 14px;
+  margin: 0 0 20px;
+  transition: padding-left 0.2s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 2px;
+    transition: background 0.2s, width 0.2s;
+  }
+
+  &:hover {
+    padding-left: 16px;
+
+    &::before {
+      background: $accent-color;
+      width: 3px;
+    }
+  }
+
+  .exp-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px 12px;
+    margin-bottom: 6px;
+  }
+
+  .exp-company {
+    font-weight: 600;
+    color: #ededf0;
+    font-size: 15px;
+  }
+
+  .exp-role {
+    color: #9a9aa2;
+    font-size: 14px;
+  }
+
+  .exp-when {
+    margin-left: auto;
+    font-family: "JetBrains Mono", Monaco, monospace;
+    font-size: 12px;
+    color: #6f6f78;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Skill chips — grouped, compact, hoverable */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-bottom: 16px;
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skill-group {
+  .skill-group__label {
+    font-family: "JetBrains Mono", Monaco, monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #8a8a94;
+    margin-bottom: 8px;
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .chip {
+    font-size: 12.5px;
+    padding: 3px 9px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: #c3c3cb;
+    background: rgba(255, 255, 255, 0.03);
+    transition: border-color 0.15s, color 0.15s, background 0.15s, transform 0.15s;
+    line-height: 1.4;
+
+    &:hover {
+      border-color: rgba(122, 162, 255, 0.55);
+      color: #fff;
+      background: rgba(122, 162, 255, 0.1);
+      transform: translateY(-1px);
+    }
+  }
+}
+
+/* Staggered section reveal */
+.page__content > .reveal {
+  opacity: 0;
+  transform: translateY(6px);
+  animation: reveal 0.5s ease forwards;
+}
+.page__content > .reveal:nth-child(1) { animation-delay: 0.05s; }
+.page__content > .reveal:nth-child(2) { animation-delay: 0.12s; }
+.page__content > .reveal:nth-child(3) { animation-delay: 0.18s; }
+.page__content > .reveal:nth-child(4) { animation-delay: 0.24s; }
+.page__content > .reveal:nth-child(5) { animation-delay: 0.30s; }
+.page__content > .reveal:nth-child(6) { animation-delay: 0.36s; }
+.page__content > .reveal:nth-child(7) { animation-delay: 0.42s; }
+.page__content > .reveal:nth-child(8) { animation-delay: 0.48s; }
+
+@keyframes reveal {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Site colophon — small monospace footer */
+.colophon {
+  margin-top: 56px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: "JetBrains Mono", Monaco, monospace;
+  font-size: 11px;
+  color: #5f5f68;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: space-between;
+}
+
+/* Profile pic — subtle hover lift */
+.profile-pic {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  &:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 14px 34px -14px rgba(0, 0, 0, 0.75);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-pill .dot,
+  .page__content > .reveal {
+    animation: none;
+  }
+  .page__content > .reveal { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   Dark grid backdrop
+   Two fixed layers behind everything:
+   - ::before  the grid, masked so it fades out down the centre reading column
+   - ::after   a soft top glow + edge vignette for depth
+   ========================================================================== */
+
+/* NOTE: body must stay transparent. html already carries the base
+   $background-color, and these fixed layers sit at negative z-index — an opaque
+   background on body would paint over them and hide the grid. */
+
+/* the grid */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.16) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.16) 1px, transparent 1px);
+  background-size: 30px 30px;
+  /* grid stays visible down both side margins, fading well back across the whole
+     centre reading column (wider + deeper) so the text stays crisp */
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 12%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.1) 74%, #000 88%, #000 100%);
+  mask-image: linear-gradient(90deg, #000 0%, #000 12%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.1) 74%, #000 88%, #000 100%);
+}
+
+/* soft ambient glow from the very top — subtle wash, no hard band */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(75% 45% at 50% -15%, rgba(122, 162, 255, 0.06), transparent 62%);
+}
+
+/* dark scrollbar to match */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: $background-color;
+}
+::-webkit-scrollbar-thumb {
+  background: #26262e;
+  border-radius: 6px;
+  border: 2px solid $background-color;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #34343e;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }

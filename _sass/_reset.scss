@@ -8,6 +8,7 @@ html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
   background-color: $background-color;
+  color-scheme: dark;
   font-size: 16px;
 
   @include breakpoint($medium) {
@@ -25,13 +26,13 @@ body { margin: 0; }
 /* Selected elements */
 
 ::-moz-selection {
-  color: #fff;
-  background: #000;
+  color: #0a0a0c;
+  background: #7aa2ff;
 }
 
 ::selection {
-  color: #fff;
-  background: #000;
+  color: #0a0a0c;
+  background: #7aa2ff;
 }
 
 /* Display HTML5 elements in IE6-9 and FF3 */
